@@ -13,7 +13,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-	//Instead of custom userDetail service,lets use inmemory
+	//Instead of custom userDetail service,lets use inmemory by using UserDetailService
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		InMemoryUserDetailsManager userDetailsService=new InMemoryUserDetailsManager();
